@@ -60,7 +60,7 @@ local-mcp-starter/
 
 ```bash
 cd ~
-git clone https://github.com/yourname/local-mcp-starter.git
+git clone https://github.com/M-Asan0/local-mcp-starter.git
 cd local-mcp-starter
 ```
 
