@@ -102,9 +102,8 @@ docker build -t ${MCP_IMAGE_NAME} .
       "args": [
         "bash",
         "-lc",
-        "$HOME/local-mcp-starter/run-for-cursor.sh"
+        "$HOME/local-mcp-starter/run-for-MCP-client.sh"
       ]
-      
     }
   }
 }

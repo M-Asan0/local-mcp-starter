@@ -104,9 +104,8 @@ Rebuild if you modify `server.py` or Dockerfile.
       "args": [
         "bash",
         "-lc",
-        "$HOME/local-mcp-starter/run-for-cursor.sh"
+        "$HOME/local-mcp-starter/run-for-MCP-client.sh"
       ]
-      
     }
   }
 }
