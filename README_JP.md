@@ -22,7 +22,7 @@
 例：
 
 ```
-Run tool local-project-filesystem.list_project_files with {"subdir":"<your/path/here>"}
+Run tool local-project-filesystem.list_project_files with {"subdir":"<path-to-the-directory-you-want-to-scan>"}
 ```
 
 ---
@@ -33,7 +33,7 @@ Run tool local-project-filesystem.list_project_files with {"subdir":"<your/path/
 例：
 
 ```
-Run tool local-project-filesystem.read_project_file with {"path":"<your/file/here>"}
+Run tool local-project-filesystem.read_project_file with {"path":"<path-to-the-file-you-want-to-read>"}
 ```
 
 ---
@@ -117,13 +117,13 @@ docker build -t ${MCP_IMAGE_NAME} .
 ### ファイル一覧取得
 
 ```
-Run tool local-project-filesystem.list_project_files with {"subdir":"src"}
+Run tool local-project-filesystem.list_project_files with {"subdir":"<path-to-the-directory-you-want-to-scan>"}
 ```
 
 ### ファイル内容の読み取り
 
 ```
-Run tool local-project-filesystem.read_project_file with {"path":"src/main.ts"}
+Run tool local-project-filesystem.read_project_file with {"path":"<path-to-the-file-you-want-to-read>"}
 ```
 
 ### AI に MCP を使わせるテンプレート

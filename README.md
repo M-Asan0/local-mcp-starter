@@ -23,7 +23,7 @@ Recursively returns all file paths under the specified subdirectory.
 Example:
 
 ```
-Run tool local-project-filesystem.list_project_files with {"subdir":"<your/path/here>"}
+Run tool local-project-filesystem.list_project_files with {"subdir":"<path-to-the-directory-you-want-to-scan>"}
 ```
 
 ### ✔ `read_project_file(path)`
@@ -32,7 +32,7 @@ Reads the content of a file relative to the project root.
 Example:
 
 ```
-Run tool local-project-filesystem.read_project_file with {"path":"<your/file/here>"}
+Run tool local-project-filesystem.read_project_file with {"path":"<path-to-the-file-you-want-to-read>"}
 ```
 
 ---
@@ -119,13 +119,13 @@ Rebuild if you modify `server.py` or Dockerfile.
 ### List files
 
 ```
-Run tool local-project-filesystem.list_project_files with {"subdir":"src"}
+Run tool local-project-filesystem.list_project_files with {"subdir":"<path-to-the-directory-you-want-to-scan>"}
 ```
 
 ### Read a file
 
 ```
-Run tool local-project-filesystem.read_project_file with {"path":"src/utils/helpers.ts"}
+Run tool local-project-filesystem.read_project_file with {"path":"<path-to-the-file-you-want-to-read>"}
 ```
 
 ### Ask the AI to use MCP
