@@ -80,10 +80,14 @@ Rebuild if you modify `server.py` or Dockerfile.
 
 ---
 
-# 🖥 MCP Configuration (Cursor / WSL example)
+## 4. 🖥 MCP Configuration
  Assume you cloned the repo under $HOME/local-mcp-starter.If you use a different location, update the cd path accordingly.
 
+### 4-1. Cursor
  `~/.cursor/mcp.json`:
+
+#### Windwos/WSL 
+`%USERPROFILE%\.cursor\mcp.json` 
 ```json
 {
   "mcpServers": {
@@ -97,7 +101,102 @@ Rebuild if you modify `server.py` or Dockerfile.
     }
   }
 }
+```
 
+#### macOS 
+`~/.cursor/mcp.json`
+
+`<project-directory>/.cursor/mcp.json`
+```json
+{
+  "mcpServers": {
+    "local-mcp-starter": {
+      "command": "bash",
+      "args": [
+        "-lc",
+        "$HOME/local-mcp-starter/run-for-MCP-client.sh"
+      ]
+    }
+  }
+}
+```
+
+#### Linux
+`~/.cursor/mcp.json`
+
+`<project-directory>/.cursor/mcp.json`
+```json
+{
+  "mcpServers": {
+    "local-mcp-starter": {
+      "command": "bash",
+      "args": [
+        "-lc",
+        "$HOME/local-mcp-starter/run-for-MCP-client.sh"
+      ]
+    }
+  }
+}
+```
+### 4-2. Claude Desktop
+
+#### Windwos/WSL 
+`%APPDATA%\Claude\claude_desktop_config.json`
+```json
+{
+  "mcpServers": {
+    "local-mcp-starter": {
+      "command": "wsl",
+      "args": [
+        "bash",
+        "-lc",
+        "$HOME/local-mcp-starter/run-for-MCP-client.sh"
+      ]
+    }
+  },
+  "isDxtAutoUpdatesEnabled": true,
+  "preferences": {
+    "menuBarEnabled": false,
+    "legacyQuickEntryEnabled": false
+  }
+}
+```
+
+#### macOS 
+`/Users/<USERNAME>/Library/Application Support/Claude/claude_desktop_config.json`
+```json
+{
+  "mcpServers": {
+    "local-mcp-starter": {
+      "command": "bash",
+      "args": [
+        "-lc",
+        "$HOME/local-mcp-starter/run-for-MCP-client.sh"
+      ]
+    }
+  },
+  "isDxtAutoUpdatesEnabled": true,
+  "preferences": {
+    "menuBarEnabled": false,
+    "legacyQuickEntryEnabled": false
+  }
+}
+```
+
+#### Linux 
+`/home/<USERNAME>/.config/Claude/claude_desktop_config.json` 
+```json
+{
+  "mcpServers": {
+    "local-mcp-starter": {
+      "command": "bash",
+      "args": [
+        "-lc",
+        "$HOME/local-mcp-starter/run-for-MCP-client.sh"
+      ]
+    }
+  }
+}
 ```
 
 ---
