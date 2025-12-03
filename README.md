@@ -20,20 +20,8 @@ This starter is designed to be:
 ### ✔ `list_project_files(subdir=".")`
 Recursively returns all file paths under the specified subdirectory.
 
-Example:
-
-```
-Run tool local-project-filesystem.list_project_files with {"subdir":"<path-to-the-directory-you-want-to-scan>"}
-```
-
 ### ✔ `read_project_file(path)`
 Reads the content of a file relative to the project root.
-
-Example:
-
-```
-Run tool local-project-filesystem.read_project_file with {"path":"<path-to-the-file-you-want-to-read>"}
-```
 
 ---
 

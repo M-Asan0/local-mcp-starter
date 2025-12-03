@@ -19,22 +19,8 @@
 ### ✔ `list_project_files(subdir=".")`
 指定ディレクトリ以下の全ファイルを再帰的に取得。
 
-例：
-
-```
-Run tool local-project-filesystem.list_project_files with {"subdir":"<path-to-the-directory-you-want-to-scan>"}
-```
-
----
-
 ### ✔ `read_project_file(path)`
 指定ファイルの内容を返す。
-
-例：
-
-```
-Run tool local-project-filesystem.read_project_file with {"path":"<path-to-the-file-you-want-to-read>"}
-```
 
 ---
 
