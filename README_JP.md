@@ -81,6 +81,9 @@ MCP_IMAGE_NAME=local-mcp-starter
 ## 3. Docker イメージをビルド
 
 ```bash
+set -a
+. .env
+set +a
 docker build -t ${MCP_IMAGE_NAME} .
 ```
 
