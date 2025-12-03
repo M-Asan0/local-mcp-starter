@@ -91,7 +91,7 @@ docker build -t ${MCP_IMAGE_NAME} .
 
 # 🖥 Cursor（WSL）での MCP 設定
 ~/local-mcp-starterにgit cloneすることを想定しています。
-もし別のパスにgit cloneしたのであれば、 「cd ~/local-mcp-starter」をそのパスに書き換えてください。
+もし別のパスにgit cloneしたのであれば、 「$HOME/local-mcp-starter」をそのパスに書き換えてください。
 
 `~/.cursor/mcp.json`:
 ```json
@@ -102,8 +102,9 @@ docker build -t ${MCP_IMAGE_NAME} .
       "args": [
         "bash",
         "-lc",
-        "cd ~/local-mcp-starter && set -a && . .env && set +a && docker run --rm -i -v ${HOST_PROJECT_PATH}:${CONTAINER_PROJECT_PATH}:ro -e PROJECT_ROOT=${PROJECT_ROOT} -e MCP_SERVER_NAME=${MCP_SERVER_NAME} ${MCP_IMAGE_NAME}"
+        "$HOME/local-mcp-starter/run-for-cursor.sh"
       ]
+      
     }
   }
 }

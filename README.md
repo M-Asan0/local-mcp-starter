@@ -93,8 +93,8 @@ Rebuild if you modify `server.py` or Dockerfile.
 ---
 
 # 🖥 MCP Configuration (Cursor / WSL example)
- Assume you cloned the repo under ~/local-mcp-starter.If you use a different location, update the cd path accordingly.
- 
+ Assume you cloned the repo under $HOME/local-mcp-starter.If you use a different location, update the cd path accordingly.
+
  `~/.cursor/mcp.json`:
 ```json
 {
@@ -104,8 +104,9 @@ Rebuild if you modify `server.py` or Dockerfile.
       "args": [
         "bash",
         "-lc",
-        "cd ~/local-mcp-starter && set -a && . .env && set +a && docker run --rm -i -v ${HOST_PROJECT_PATH}:${CONTAINER_PROJECT_PATH}:ro -e PROJECT_ROOT=${PROJECT_ROOT} -e MCP_SERVER_NAME=${MCP_SERVER_NAME} ${MCP_IMAGE_NAME}"
+        "$HOME/local-mcp-starter/run-for-cursor.sh"
       ]
+      
     }
   }
 }
