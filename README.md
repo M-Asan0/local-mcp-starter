@@ -73,7 +73,7 @@ All user‑specific configuration is handled here:
 HOST_PROJECT_PATH=/home/yourname/your-project
 CONTAINER_PROJECT_PATH=/workspace/target-project
 PROJECT_ROOT=/workspace/target-project
-MCP_SERVER_NAME=local-project-filesystem
+MCP_SERVER_NAME=local-mcp-starter
 MCP_IMAGE_NAME=local-mcp-starter
 ```
 
