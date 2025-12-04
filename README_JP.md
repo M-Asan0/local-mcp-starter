@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-blue.svg)](https://hub.docker.com/_/python)
+[![FastMCP](https://img.shields.io/badge/FastMCP-1.22.0-green.svg)](https://pypi.org/project/mcp/)
 # local-mcp-starter（ローカル MCP スターター）
 
 **local-mcp-starter** は、任意のローカルプロジェクトを  
@@ -80,6 +83,22 @@ docker build -t ${MCP_IMAGE_NAME} .
 
 ### 4-1. Cursor
 
+### 操作説明
+#### 1. Cursor を開く
+Cursor を起動します。
+#### 2. 設定画面を開く
+`Shift + Ctrl + P` を押してコマンドパレットを開き、  
+`settings` と入力して **Cursor Settings** を選択します。
+#### 3. Tools & MCP を開く
+設定画面左のメニューから **Tools & MCP** を選びます。
+#### 4. Custom MCP の追加
+**Add custom MCP** ボタンを押すと`mcp.json`が開きます。
+#### 5. MCP 設定を追加する
+開いたファイルに、下記の内容を貼り付けて保存します。
+#### 6. MCP サーバーを有効化する
+設定画面の Tools & MCP タブに戻り、
+一覧に表示された local-mcp-starter のスイッチをオンにしてスイッチが緑になれば成功です。
+
 ### Windwos/WSL
 `%USERPROFILE%\.cursor\mcp.json` 
 ```json
@@ -133,6 +152,33 @@ docker build -t ${MCP_IMAGE_NAME} .
 }
 ```
 ### 4-2. Claude Desktop
+
+### 操作説明
+
+#### 1. Claude for Desktop を起動する
+アプリを起動します。
+
+#### 2. 設定を開く
+左上のメニューから **設定（Settings）** を開きます。
+
+#### 3. 「開発者」メニューを開く
+設定画面左のリストから **開発者（Developer）** を選択します。
+
+#### 4. 設定ファイルを開く
+**「設定を編集（Edit Config）」** ボタンを押すと、  
+`claude_desktop_config.json` が置かれているフォルダが開きます。
+
+#### 5. MCP 設定を追加する
+開いた JSON ファイルに、下記を参考に設定を追加して保存します。
+
+6. Claude for Desktop を再起動する
+※ 右上の「×」で閉じるだけではバックグラウンドでプロセスが残るため、
+Windowsではタスクマネージャーから完全終了させてください。
+アプリを再起動すると設定が読み込まれます
+
+7. MCP サーバーが認識されているか確認する
+チャット画面に戻り、画面下部の 「検索とツール（Search & Tools）」 に
+local-mcp-starter が表示され、スイッチが オン（緑） になっていれば成功です。
 
 ### Windwos/WSL 
 `%APPDATA%\Claude\claude_desktop_config.json`
